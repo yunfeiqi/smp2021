@@ -1,0 +1,12 @@
+{
+    "base_path":"/data1/qyf/smp2021/dataset20210721/data-20210301-20210328/",
+    "test_path":"/data1/qyf/smp2021/dataset20210721/data-label-20210301-20210328/",
+    "poi_name":"pois.txt",
+    "spus_name":"spus.txt",
+    "user_name":"users.txt",
+    "spus_train_name":"orders_train.txt",
+    "spus_train_label":"orders_spu_train.txt",
+    "spus_test_name":"orders_test_poi.txt",
+    "spus_test_label":"orders_spu_test_label.txt",
+    "graph_path":"/data1/qyf/smp2021/dataset20210721/graph/"
+}
