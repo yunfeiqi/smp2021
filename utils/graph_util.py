@@ -1,5 +1,6 @@
 
 from utils.fileutl import *
+from utils.trans import * 
 
 
 def build_entity(x,prefix,entit_type):
@@ -29,3 +30,21 @@ def build_relation(x,left_name,right_name,prefix_left,prefix_right,relarray):
     right = prefix_right + right
     rel = (left,right)
     relarray.add(rel)
+
+def build_flatmap_relation(x,left_name,right_name,prefix_left,prefix_right,relarray):
+    '''
+        x: pandas 对象
+        left_name: 左实体名称
+        right_name: 右实体名称
+        prefix_left: 左实体前缀
+        prefix_right: 右实体前缀
+        relarray: 关系集合对象
+    '''
+    left = str(x[left_name])
+    right = str(x[right_name])
+    ts = str2array(right)
+    left = prefix_left + left
+    for t in ts:
+        _t = prefix_right + t
+        rel = (left,_t)
+        relarray.add(rel)
