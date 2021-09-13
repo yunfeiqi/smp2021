@@ -88,3 +88,4 @@ build_entity(taste,"taste_","taste")
 # 食材
 ingredients = set(flatmap(str2array,filter(lambda x:not isinstance(x,float),spus.ingredients.unique())))
 build_entity(ingredients,"ingredient_","ingredient")
+
